@@ -1,0 +1,2 @@
+var r={};r=merge;var e=Object.prototype.hasOwnProperty;function merge(r,t,o){if(!r)throw new TypeError("argument dest is required");if(!t)throw new TypeError("argument src is required");void 0===o&&(o=true);Object.getOwnPropertyNames(t).forEach((function forEachOwnPropertyName(n){if(o||!e.call(r,n)){var a=Object.getOwnPropertyDescriptor(t,n);Object.defineProperty(r,n,a)}}));return r}var t=r;export default t;
+

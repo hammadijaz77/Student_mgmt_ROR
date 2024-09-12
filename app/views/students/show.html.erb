@@ -1,0 +1,17 @@
+<div class="col-lg-8 mt-5 mb-5">
+<div class="card rounded-0 shadow">
+<div class="card-body">
+<h1>Student Details</h1>
+<p><strong>First Name: </strong><%= @student.first_name%> </p>
+<p><strong>Last Name: </strong><%= @student.last_name%> </p>
+<p><strong>Email: </strong><%= @student.email%> </p>
+
+<% if @student.date_of_birth.present? %>
+<p><strong>Date of Birth: </strong><%= formatted_date(@student.date_of_birth)%> </p>
+<%end%>
+
+<%= link_to 'Back', students_path, class: "btn btn-primary"%>  
+<%= link_to 'Edit', edit_student_path(@student), class: "btn btn-secondary" %>
+</div>
+</div>
+</div>
